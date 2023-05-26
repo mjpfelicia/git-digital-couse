@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-content {
+    height: 100vh;
+
+}
+
+.icon-cpu {
+    color: aqua;
+}
+
+.page-content h1 {
+    font-size: 3.6rem;
+    color: rgb(43, 40, 40);
+}
+
+
+p {
+    color: rgb(62, 230, 230);
+    border-bottom: 1px solid #c7b1b1;
+    font-size: 3.6rem;
+}
+
+
+aside {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.input-group {
+    margin: 0.5rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: aqua;
+    border: none;
+    width: 89%;
+    color: white;
+    font-size: 1rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: aqua;
+
+}
+
+footer a {
+
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    grid-area: title;
+}
+
+aside {
+    grid-area: login;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .page-content {
+        display: grid;
+        gap: 10rem 0;
+
+
+
+        grid-template-areas:
+
+            ". . . . ."
+            ". title login login ."
+            ". title login login ."
+            ". title login login ."
+            "....."
+            "footer footer footer footer footer"
+
+        ;
+    }
+
+
+}
